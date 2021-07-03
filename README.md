@@ -48,7 +48,7 @@ A continuación se presentar los roles y las funciones que cumplirá cada estudi
 
 ## Product Backlog
 
-Teniendo en cuenta las limitación de tiempo para realizar los siguientes desarrollos:
+Teniendo en cuenta las limitaciones de tiempo para realizar los siguientes desarrollos:
 
 - Base de datos
 - API Backend
