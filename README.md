@@ -1,6 +1,12 @@
-# Retro Store
+<div style="text-align: center;">
+<h1>Retro Store</h1>
+
 Online NFT Store Simulator | Misión TIC 2022
 
+<img src="https://media.giphy.com/media/McDxBilGiX2WaT1YLQ/giphy.gif" width="100rem" alt="Mario pixel gif">
+
+![website screenshot](.assets/mockups/store.png)
+</div>
 ## Descripción
 [Software de Gestión de servicios online 
 Sector: Online NFT Store]
@@ -14,7 +20,9 @@ Describir todos los requerimientos priorizados necesarios para desarrollar el pr
 [Diagrama UML adaptado al proyecto]
 
 ## Roles
-[Se deben presentar los roles que estarán implicados en el desarollo del proyecto, con las funciones que cumpliran cada uno.]
+A continuación se presentar los roles que estarán implicados en el desarollo del proyecto, con las funciones que cumpliran cada uno.
+
+
 
 ## Objetivos y misión del Proyecto
 
