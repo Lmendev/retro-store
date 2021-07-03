@@ -26,9 +26,15 @@ Describir todos los requerimientos priorizados necesarios para desarrollar el pr
 [Diagrama UML adaptado al proyecto]
 
 ## Roles
-A continuación se presentar los roles que estarán implicados en el desarollo del proyecto, con las funciones que cumpliran cada uno.
+A continuación se presentar los roles y las funciones que cumplirá cada estudiante implicado en el desarollo del proyecto.
 
-
+| Student                       | Scrum Team Role         | Responsibilites    |
+|-------------------------------|-------------------------|--------------------|
+| Gina Paola Becerra Corredor   | Scrum Master            | Group Leader       |
+| Adrian Jose Garcia Corredor   | Development Team Member | Frontend Developer |
+| Luis Antonio Mendoza Marriaga | Development Team Member | Frontend Developer |
+| Victor Roca Salcedo           | Development Team Member | Backend Developer  |
+| Raul Felipe Pineda Betancourt | Development Team Member | Backend Developer  |
 
 ## Objetivos y misión del Proyecto
 
