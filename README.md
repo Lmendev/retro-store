@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
 <h1>Retro Store</h1>
 
 Online NFT Store Simulator | Misión TIC 2022
@@ -7,6 +7,7 @@ Online NFT Store Simulator | Misión TIC 2022
 
 ![website screenshot](.assets/mockups/store.png)
 </div>
+
 ## Descripción
 [Software de Gestión de servicios online 
 Sector: Online NFT Store]
