@@ -3,7 +3,7 @@
 
 Online NFT Store Simulator | Misión TIC 2022
 
-<img src="https://media.giphy.com/media/McDxBilGiX2WaT1YLQ/giphy.gif" width="100rem" alt="Mario pixel gif">
+<img src="https://media.giphy.com/media/McDxBilGiX2WaT1YLQ/giphy.gif" width="120rem" alt="Mario pixel gif">
 
 ![website screenshot](.assets/mockups/store.png)
 </div>
