@@ -18,9 +18,16 @@ Online NFT Store Simulator | Misión TIC 2022
 Sector: Online NFT Store]
 
 ## Requerimientos
-[Requerimientos más importantes priorizados teniendo en cuenta las limitación de tiempo para realizar el desarrollo de base de datos, API Backend, Frontend y Despliegue a producción:
+Teniendo en cuenta las limitación de tiempo para realizar los siguientes desarrollos:
 
-Describir todos los requerimientos priorizados necesarios para desarrollar el proyecto.]
+- Base de datos
+- API Backend
+- Frontend
+- Despliegue a producción
+
+Se describen a continuación todos los requerimientos priorizados necesarios para desarrollar el proyecto:
+
+[requerimientos]
 
 ## Diagrama UML
 [Diagrama UML adaptado al proyecto]
