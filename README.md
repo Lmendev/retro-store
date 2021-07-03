@@ -17,20 +17,23 @@ Online NFT Store Simulator | Misión TIC 2022
 [Software de Gestión de servicios online 
 Sector: Online NFT Store]
 
-## Requerimientos
-Teniendo en cuenta las limitación de tiempo para realizar los siguientes desarrollos:
+[Descripción de la necesidad a resolver presentando el objetivo y la justificación.]
 
-- Base de datos
-- API Backend
-- Frontend
-- Despliegue a producción
+## Necesidad a satisfacer
 
-Se describen a continuación todos los requerimientos priorizados necesarios para desarrollar el proyecto:
+Presentar el objetivo y la justificación
 
-[requerimientos]
+## Justificación 
 
-## Diagrama UML
-[Diagrama UML adaptado al proyecto]
+## Objetivos
+
+## Misión
+
+[Explicar el ámbito y las restricciones del proyecto.]
+
+[se deben presentar los objetivos y la misión del proyecto de manera clara y acorde con la necesidad a satisfacer.]
+
+Se pretende desarrollar una aplicación web, en donde los usuarios pueden comprar tokens no fungibles (NFT) que serán administrados o subidos en la plataforma por un administrador. Es importante tener en cuenta, que dicha aplicación se centrará en el proceso de administración y compra de dichos tokens, es decir, el desarrollo de la tecnología que permite crear los NFT no estará por el momento dentro del alcance del proyecto.
 
 ## Roles
 A continuación se presentar los roles y las funciones que cumplirá cada estudiante implicado en el desarollo del proyecto.
@@ -43,26 +46,20 @@ A continuación se presentar los roles y las funciones que cumplirá cada estudi
 | Victor Roca Salcedo           | Development Team Member | Backend Developer  |
 | Raul Felipe Pineda Betancourt | Development Team Member | Backend Developer  |
 
-## Objetivos y misión del Proyecto
-
-[Explicar el ámbito y las restricciones del proyecto.]
-
-[se deben presentar los objetivos y la misión del proyecto de manera clara y acorde con la necesidad a satisfacer.]
-
-Se pretende desarrollar una aplicación web, en donde los usuarios pueden comprar tokens no fungibles (NFT) que serán administrados o subidos en la plataforma por un administrador. Es importante tener en cuenta, que dicha aplicación se centrará en el proceso de administración y compra de dichos tokens, es decir, el desarrollo de la tecnología que permite crear los NFT no estará por el momento dentro del alcance del proyecto.
-
 ## Product Backlog
 
-[Lista que recoge todo lo que necesita el producto para satisfacer las necesidades del cliente.]
+Teniendo en cuenta las limitación de tiempo para realizar los siguientes desarrollos:
 
-### Atributos 
+- Base de datos
+- API Backend
+- Frontend
+- Despliegue a producción
 
-[Se utilizan para agrupar y priorizar elementos]
+Se describen a continuación todos los requerimientos priorizados necesarios para satisfacer las necesidades del cliente y desarrollar el proyecto.
 
-### Descripción
-[La descripción de la necesidad a resolver debe presentar el objetivo y la justificación.]
-### Orden
-### Estimación
-### Valor
+|Atributos | Descripción | Orden | Estimación | Valor |
+|----|--|--|--|--|
+|[Se utilizan para agrupar y priorizar elementos]|[La descripción de la necesidad a resolver debe presentar el objetivo y la justificación.]
 
-
+## Diagrama UML
+[Diagrama UML adaptado al proyecto]
