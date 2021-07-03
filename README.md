@@ -5,6 +5,11 @@ Online NFT Store Simulator | Misión TIC 2022
 
 <img src="https://media.giphy.com/media/McDxBilGiX2WaT1YLQ/giphy.gif" width="120rem" alt="Mario pixel gif">
 
+![issues shield](https://img.shields.io/github/issues/Lmendev/retro-store)
+![forks shield](https://img.shields.io/github/forks/Lmendev/retro-store)
+![starts shield](https://img.shields.io/github/stars/Lmendev/retro-store)
+![licence shield](https://img.shields.io/github/license/Lmendev/retro-store)
+
 ![website screenshot](.assets/mockups/store.png)
 </div>
 
