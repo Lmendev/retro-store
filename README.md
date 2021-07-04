@@ -29,9 +29,9 @@ Los NFT poseen las sigientes características:
 - No pueden ser subdivididos
 - Exploran la escasez digital
 
-Por otro lado, el arte y videojuegos retro presenta también una tendencia al alza despertando el interés  en el mercado debido a su escazes y productos fuera de producción.
+Por otro lado, la demanda del arte y videojuegos retro presentan también una tendencia al alza. Despertando el interés en el mercado gracias a que los productos se encuentran fuera de producción.
 
-Grandes compañías, como SONY o Nintendo, se han dado cuenta de esta tendencia por lo cual han sacado al mercado versiones de sus productos más emblemáticos de la década de los 80s y 90s.
+Grandes compañías, como SONY o Nintendo, se han dado cuenta de esta tendencia. Por esta razón, han remasterizado y presentado al mercado nuevas versiones de sus productos más emblemáticos de la década de los 80s y 90s.
 
 Debido a las razones expuestas, decidimos brindar a los potenciales usuarios una plataforma web en la que puedan encontrar todo lo relacionado al mercado retro. Con el objetivo de ofrecer artículos coleccionables, únicos e irrepetibles representados digitalmente. Activos digitales que poseen valor económico. Capaces de ser comprados y vendidos de forma fácil.
 
