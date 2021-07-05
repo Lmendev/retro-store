@@ -76,7 +76,8 @@ Se describen a continuación todos los requerimientos priorizados necesarios par
 |[Se utilizan para agrupar y priorizar elementos]|[La descripción de la necesidad a resolver debe presentar el objetivo y la justificación.]
 
 ## 📈 Diagrama UML
-[Diagrama UML adaptado al proyecto]
+
+![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.jpeg)
 
 ## 📙 Referencias
 [iproup - ¿Qué es un NFT, para qué se usa y cómo se vende?](https://www.iproup.com/economia-digital/24021-que-es-un-nft-para-que-se-usa-y-como-se-vende)
