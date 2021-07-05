@@ -69,11 +69,10 @@ Teniendo en cuenta las limitaciones de tiempo para realizar los siguientes desar
 - Frontend
 - Despliegue a producción
 
-Se describen a continuación todos los requerimientos priorizados necesarios para satisfacer las necesidades del cliente y desarrollar el proyecto.
+Hemos compilado y organizado todas las historias de usuario necesarias para satisfacer las necesidades de nuestro cliente.
 
-|Atributos | Descripción | Orden | Estimación | Valor |
-|----|--|--|--|--|
-|[Se utilizan para agrupar y priorizar elementos]|[La descripción de la necesidad a resolver debe presentar el objetivo y la justificación.]
+Sigue el **estado actual de nuestro Product Backlog** en 👉
+[<img src=".assets/images/tools/clickUp.svg" width="85rem" style="position: absolute; margin-left: .5rem; background-color: #fff;border:3px solid #fff;"/>](https://sharing.clickup.com/l/h/6-17754975-1/0b4db6b6fd9a9b4)
 
 ## 📈 Diagrama UML
 
