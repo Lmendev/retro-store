@@ -21,9 +21,9 @@ El enfoque del programa se interesa por que los tripulantes construyan progresiv
 
 ## ✋ Necesidad a satisfacer
 
-Los tokens no fungibles son una tendencia que ha venido creciendo en los últimos años en el universo cripto. La creación de estos recursos nos permiten generar arte en la blockchain, certificar propiedad y comercializar artículos exclusivos.
+Los tokens no fungibles son una tendencia que ha venido creciendo en los últimos años en el universo cripto. La creación de estos recursos nos permite generar arte en la blockchain, certificar propiedad y comercializar artículos exclusivos.
 
-Los NFT poseen las sigientes características:
+Los NFT poseen las siguientes características:
 
 - Cada token representa un bien único e irrepetible
 - No pueden ser subdivididos
@@ -37,20 +37,16 @@ Debido a las razones expuestas, decidimos brindar a los potenciales usuarios una
 
 ## 🚀 Misión
 
-[Explicar el ámbito y las restricciones del proyecto.]
+Ofrecer un servicio que simule para la comercialización de tokens no fungibles (NFT) por medio de una plataforma web que satisfaga parte de las necesidades del mercado en cuanto a coleccionables digitales de arte retro.
 
-[se deben presentar los objetivos y la misión del proyecto de manera clara y acorde con la necesidad a satisfacer.]
+## 🎯 Objetivo
 
-Se pretende desarrollar una aplicación web, en donde los usuarios pueden comprar tokens no fungibles (NFT) que serán administrados o subidos en la plataforma por un administrador. Es importante tener en cuenta, que dicha aplicación se centrará en el proceso de administración y compra de dichos tokens, es decir, el desarrollo de la tecnología que permite crear los NFT no estará por el momento dentro del alcance del proyecto.
+Desarrollar una aplicación web funcional con lo aprendido en el programa **Misión TIC 2022**, en donde los usuarios pueden comprar tokens no fungibles (NFT) que serán administrados o subidos en la plataforma por un administrador, utilizando la metodología Scrum, frameworks, implementación de SPA (Single-page application) y desarrollo de componentes en distintos lenguajes de programación brindados en el programa para brindar potenciales usuarios una plataforma web en la que puedan adquirir artículos coleccionables digitalmente, relacionados al mercado retro, capaces de ser comprados y vendidos de forma fácil.
 
-## 🎯 Objetivos
-
-Se pretende desarrollar una aplicación web, en donde los usuarios pueden comprar tokens no fungibles (NFT) que serán administrados o subidos en la plataforma por un administrador. Es importante tener en cuenta, que dicha aplicación se centrará en el proceso de administración y compra de dichos tokens, es decir, el desarrollo de la tecnología que permite crear los NFT no estará por el momento dentro del alcance del proyecto.
-
-
+Es importante tener en cuenta, que dicha aplicación se centrará en el proceso de administración y compra de dichos tokens, es decir, el desarrollo de la tecnología que permite crear los NFT no estará por el momento dentro del alcance del proyecto.
 
 ## 👨‍💻👩‍💻 Roles
-A continuación se presentar los roles y las funciones que cumplirá cada estudiante implicado en el desarollo del proyecto.
+A continuación, se presentar los roles y las funciones que cumplirá cada estudiante implicado en el desarrollo del proyecto.
 
 | 🚀 Tripulante                       | Scrum Team Role         | Responsabilidades    |
 |-------------------------------|-------------------------|--------------------|
@@ -79,4 +75,8 @@ Sigue el **estado actual de nuestro Product Backlog** en 👉
 ![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.jpeg)
 
 ## 📙 Referencias
-[iproup - ¿Qué es un NFT, para qué se usa y cómo se vende?](https://www.iproup.com/economia-digital/24021-que-es-un-nft-para-que-se-usa-y-como-se-vende)
+
+- [iproup - ¿Qué es un NFT, para qué se usa y cómo se vende?](https://www.iproup.com/economia-digital/24021-que-es-un-nft-para-que-se-usa-y-como-se-vende)
+- [Nintendo classic NES system to get re-release](https://ew.com/article/2016/07/18/nintendo-re-release-nes/)
+- [Wingman Software | Planning Poker - The Original Paper](https://wingman-sw.com/articles/planning-poker)
+- [Planning Poker Web](https://www.planningpoker.com/)
