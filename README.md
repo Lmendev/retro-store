@@ -84,6 +84,15 @@ Store Main View
 
 ## 👍 ¿Te gusta el proyecto?
 ¡Déjanos una estrella ⭐ para saberlo y continuar motivados! 😃
+
+## ⚖️ Licencia
+Interfaz gráfica de usuario inspiradas en el diseño de [rollercoin.com](http://rollercoin.com/) con motivos académicos. Las imágenes y los diseños son material protegido por derechos de autor.
+
+Este es un proyecto hecho por un estudiantes y no tiene la intención de infringir ningún material con derechos de autor. Las imágenes y recursos del material presentado están destinadas a ser utilizadas con fines de información, revisión e investigación solo para otros estudiantes y profesores. **De ninguna manera se utilizan con fines de lucro**.
+
+Todas las imágenes son propiedad de sus respectivos dueños. © rollercoin.com 2018-2021 / © 2021 Nintendo / Sony Group Corporation. Todos los demás logotipos / marcas comerciales son propiedad de sus respectivos propietarios / empresas. Las imágenes de este proyecto se utilizan únicamente con fines de revisión e ilustración.
+
+Retro Store is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 ## 📙 Referencias
 
 - [iproup - ¿Qué es un NFT, para qué se usa y cómo se vende?](https://www.iproup.com/economia-digital/24021-que-es-un-nft-para-que-se-usa-y-como-se-vende)
