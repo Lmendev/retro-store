@@ -74,6 +74,20 @@ Sigue el **estado actual de nuestro Product Backlog** en 👉
 
 ![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.jpeg)
 
+## 🖌️ Mockups
+
+Login View
+![Login View Image](.assets/mockups/login.png)
+
+Store Main View
+![Store Main View Image](.assets/mockups/store.png)
+
+## 👍 ¿Te gusta nuestro proyecto?
+¡Déjanos una estrella ⭐ para saberlo y continuar motivados! 😃
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/lmendev/retro-store" data-icon="octicon-star" data-size="large" aria-label="Star lmendev/retro-store on GitHub">Star</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 ## 📙 Referencias
 
 - [iproup - ¿Qué es un NFT, para qué se usa y cómo se vende?](https://www.iproup.com/economia-digital/24021-que-es-un-nft-para-que-se-usa-y-como-se-vende)
