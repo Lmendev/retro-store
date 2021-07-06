@@ -74,6 +74,16 @@ Sigue el **estado actual de nuestro Product Backlog** en 👉
 
 ![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.jpeg)
 
+## 🖌️ Mockups
+
+Login View
+![Login View Image](.assets/mockups/login.png)
+
+Store Main View
+![Store Main View Image](.assets/mockups/store.png)
+
+## 👍 ¿Te gusta el proyecto?
+¡Déjanos una estrella ⭐ para saberlo y continuar motivados! 😃
 ## 📙 Referencias
 
 - [iproup - ¿Qué es un NFT, para qué se usa y cómo se vende?](https://www.iproup.com/economia-digital/24021-que-es-un-nft-para-que-se-usa-y-como-se-vende)
