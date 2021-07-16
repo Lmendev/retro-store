@@ -56,9 +56,23 @@ function deleteNft(req, res) {
   });
 }
 
+function updateNft(req, res) {
+  var id = req.params.id;
+  Nft.findOneAndUpdate(
+    { _id: id },
+    req.body,
+    { new: true },
+    function (err, Nft) {
+      if (err) res.send(err);
+      res.json(Nft);
+    }
+  );
+}
+
 module.exports = {
   saveNft,
   searchNft,
   listNft,
   deleteNft,
+  updateNft,
 };
