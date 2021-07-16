@@ -26,7 +26,39 @@ function searchNft(req, res) {
   });
 }
 
+function listNft(req, res) {
+  var idNft = req.params.id;
+  if (!idNft) {
+    var result = Nft.find({}).sort("title");
+  }
+  result.exec(function (err, result) {
+    if (err) {
+      res.status(500).send({ message: "Error al ejecutar la solicitud" });
+    } else {
+      if (!result) {
+        res
+          .status(400)
+          .send({ message: "El resgistro no se encuestra disponible" });
+      } else {
+        res.status(200).send({ result });
+      }
+    }
+  });
+}
+
+function deleteNft(req, res) {
+  var idNft = req.params.id;
+  Nft.findByIdAndRemove(idNft, function (err, nft) {
+    if (err) {
+      return res.json(500, { message: "No hemos encontrado NFT" });
+    }
+    return res.json(nft);
+  });
+}
+
 module.exports = {
   saveNft,
   searchNft,
+  listNft,
+  deleteNft,
 };
