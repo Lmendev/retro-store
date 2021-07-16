@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb://localhost:27017/retroStore",
+  "mongodb+srv://admin:1M0wqF3ROQ7K19JU@cluster0.3tkog.mongodb.net/retroStore?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
