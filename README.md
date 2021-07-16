@@ -72,7 +72,7 @@ Sigue el **estado actual de nuestro Product Backlog** en 👉
 
 ## 📈 Diagrama UML
 
-![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.jpeg)
+![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.png)
 
 ## 🖌️ Mockups
 
