@@ -9,6 +9,24 @@ function saveNft(req, res) {
   });
 }
 
+function searchNft(req, res) {
+  var idNft = req.params.id;
+  Nft.findById(idNft).exec((err, result) => {
+    if (err) {
+      res.status(500).send({ message: "Error al ejecutar solicitud" });
+    } else {
+      if (!result) {
+        res
+          .status(404)
+          .send({ message: "El registro no se encuentra disponible" });
+      } else {
+        res.status(200).send({ result });
+      }
+    }
+  });
+}
+
 module.exports = {
   saveNft,
+  searchNft,
 };
