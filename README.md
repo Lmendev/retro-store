@@ -72,7 +72,7 @@ Sigue el **estado actual de nuestro Product Backlog** en 👉
 
 ## 📈 Diagrama UML
 
-![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.jpeg)
+![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.png)
 
 ## 🖌️ Mockups
 
@@ -81,6 +81,22 @@ Login View
 
 Store Main View
 ![Store Main View Image](.assets/mockups/store.png)
+
+## 🛣️ Routes
+
+### API V1 
+Prefix: /api/v1
+
+| Route \ HTTP METHOD     |  GET                   | POST               | PUT                | DELETE             |
+|-------------------------|------------------------|--------------------|--------------------|--------------------|
+| /nfts                   | List all NFT           | Create new NFT     | N/A                | N/A                |
+| /nfts/{ token \| id }   | Get NFT by token or id | N/A                | Update NFT         | Delete NFT         |
+| /users                  | List all users         | Create new user    | N/A                | N/A                |
+| /users/{ id }           | Get user by id         | N/A                | Update user        | Delete user        |
+| /collections            |    |  |  |  |
+| /carts                  |    |  |  |  |
+| /transactions           |    |  |  |  |
+
 
 ## 👍 ¿Te gusta el proyecto?
 ¡Déjanos una estrella ⭐ para saberlo y continuar motivados! 😃
