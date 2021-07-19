@@ -2,6 +2,7 @@ main .spotlight {
     background: url('/assets/images/spotlight.jpg') center;
     min-height: 38rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 main .spotlight .logo img{
@@ -23,4 +24,41 @@ main .spotlight .logo img{
 
 .main-title {
     padding-top: 5rem;
+}
+
+section.statistics {
+    display: flex;
+    justify-content: center;
+}
+
+.statistic-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.statistics .statistic-item:not(:first-child){
+    margin-left: 6rem;
+}
+
+.statistic-title {
+    font-size: 1.4rem;
+    color: var(--light-text);
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.statistic-title img{
+    width: 2.5rem;
+    filter: contrast(.4);
+    margin-bottom: 1rem;
+}
+
+.statistic-value {
+    font-size: 1.7rem;
+    opacity: .8;
+    color: var(--primary)
 }
