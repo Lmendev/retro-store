@@ -1,6 +1,6 @@
-var express = require("express");
-var cors = require("cors");
-var app = express();
+const express = require("express");
+const cors = require("cors");
+const app = express();
 app.set("port", process.env.PORT || 4000);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
