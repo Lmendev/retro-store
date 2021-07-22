@@ -1,5 +1,5 @@
 const Nft = require("../models/nftModel");
-var mongoose = require("../conexDb/conn");
+require("../conexDb/conn");
 
 function saveNft(req, res) {
   var myNft = new Nft(req.body);
