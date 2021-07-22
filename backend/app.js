@@ -1,18 +1,10 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-var app = express();
+const express = require("express");
+const cors = require("cors");
+const app = express();
+app.set("port", process.env.PORT || 4000);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Authorization, X-API-KEY, Origin, X-RequestedWith, Content-Type, Accept, Access-Control-Allow-Request-Method"
-  );
-  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
-  res.header("Allow", "GET, POST, OPTIONS, PUT, DELETE");
-  next();
-});
-
-app.use(require("./src/routers/routes"));
+app.use(cors());
+app.use("/api/v1/nfts", require("./src/routers/nftRoutes"));
+app.use("/api/v1/users", require("./src/routers/userRoutes"));
 module.exports = app;
