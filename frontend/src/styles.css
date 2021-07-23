@@ -37,3 +37,12 @@ a{
     color: var(--primary);
     text-decoration: none;   
 }
+
+.important {
+    color: #04c8cb;
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
