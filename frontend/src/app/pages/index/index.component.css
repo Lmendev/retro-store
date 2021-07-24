@@ -1,0 +1,111 @@
+main .spotlight {
+    background: url('/assets/images/spotlight.jpg') center;
+    min-height: 38rem;
+    text-align: center;
+}
+
+main .spotlight .logo img{
+    width: 7.5rem;
+}
+
+.header-retrostore{
+    text-shadow: -3px -3px 0 #644682;
+    font-size: 4.8rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.description-retrostore{
+    background-color: var(--rum);
+    font-size: 2.4rem;
+    padding: 0 .7rem;
+}
+
+.main-title {
+    padding-top: 5rem;
+}
+
+section.statistics {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.statistic-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.statistics .statistic-item:not(:first-child){
+    margin-left: 6rem;
+}
+
+.statistic-title {
+    font-size: 1.4rem;
+    color: var(--light-text);
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.statistic-title img{
+    width: 2.5rem;
+    filter: contrast(.4);
+    margin-bottom: 1rem;
+}
+
+.statistic-value {
+    font-size: 1.7rem;
+    opacity: .8;
+    color: var(--primary)
+}
+
+section.about {
+    background-color:#e9e7ed;
+    padding-top: 75 px;
+    padding: 4rem;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin: 0;
+    color: #7d59a1;
+    text-shadow: px 2px 0 rgb(133 116 142 / 22%);
+    text-align: center;
+}
+
+.about-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack:center;
+    justify-content: center;
+}
+
+.paragraph{
+    font-size: 1.1rem;
+}
+
+.paragraph p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #0b131a;
+    text-align: justify;
+}
+
+.about-container .paragraph img {
+    width: 510px;
+    height: 400px;
+    border-radius: .5rem;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
