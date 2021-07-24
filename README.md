@@ -70,9 +70,15 @@ Hemos compilado y organizado todas las historias de usuario necesarias para sati
 Sigue el **estado actual de nuestro Product Backlog** en 👉
 [<img src=".assets/images/tools/clickUp.svg" width="85rem" style="position: absolute; margin-left: .5rem; background-color: #fff;border:3px solid #fff;"/>](https://sharing.clickup.com/l/h/6-17754975-1/0b4db6b6fd9a9b4)
 
-## 📈 Diagrama UML
+## 📈 Diagramas 
 
-![UML image](.assets/uml/Diagrama%20UML%20Retro-Store.png)
+### Diagrama UML
+
+![UML diagram image](.assets/uml/Diagrama%20UML%20Retro-Store.png)
+
+### Diagrama de Paquetes
+
+![Paquetes diagram image](.assets/uml/Diagrama%20de%20Paquetes.png)
 
 ## 🖌️ Mockups
 
