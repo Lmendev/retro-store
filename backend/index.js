@@ -1,7 +1,6 @@
-var app = require("./app");
-var mongoose = require("./src/conexDB/conn");
+const app = require("./app");
+require("./src/conexDB/conn");
 
-var port = 4000;
-app.listen(port, () => {
-  console.log("servidor corriendo ok");
+app.listen(app.get("port"), () => {
+  console.log(`Servidor corriendo en puerto ${app.get("port")}`);
 });
