@@ -1,0 +1,36 @@
+{
+    "nfts": [
+        {
+            "id": 1,
+            "title": "NES console",
+            "description": "NES console pixel art",
+            "image": "nes.gif",
+            "token": "a0f62f9f2e71684b4ab2591c2f3fe652",
+            "type": "console",
+            "attributes": [
+                "nintendo",
+                "tercera generación",
+                "control",
+                "ocho bits"
+            ],
+            "artist": 1,
+            "owner": 1,
+            "price": 100
+        },
+        {
+            "id": 2,
+            "title": "Mario 16-bit",
+            "description": "Mario 16-bit Super Mario World",
+            "image": "mario-16-bit.jpg",
+            "token": "de2f15d014d40b93578d255e6221fd60",
+            "type": "character",
+            "attributes": [
+                "friendly",
+                "super mario world"
+            ],
+            "artist": 1,
+            "owner": 1,
+            "price": 74
+        }
+    ]
+}

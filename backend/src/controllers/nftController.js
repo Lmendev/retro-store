@@ -1,4 +1,5 @@
 const Nft = require("../models/nftModel");
+
 const nftCtrl = {};
 
 nftCtrl.listNft = async (req, res, next) => {

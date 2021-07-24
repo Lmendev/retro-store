@@ -1,4 +1,5 @@
 const User = require("../models/userModel");
+
 const Bcrypt = require("bcryptjs");
 const userCtrl = {};
 
