@@ -32,6 +32,7 @@
     "jwt-simple": "^0.5.6",
     "moment": "^2.29.1",
     "mongoose": "^5.13.3",
+    "mongoose-float": "^1.0.4",
     "mongoose-pagination": "^1.0.0"
   },
   "devDependencies": {
