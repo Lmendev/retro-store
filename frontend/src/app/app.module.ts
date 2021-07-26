@@ -7,6 +7,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { IndexComponent } from './pages/index/index.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { StoreComponent } from './pages/store/store.component';
+import { NftItemListComponent } from './components/store/nft-item-list/nft-item-list.component';
+import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CreateNftComponent } from './pages/nft/create/create.component';
 
 
 @NgModule({
@@ -15,7 +20,12 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     IndexComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    StoreComponent,
+    NftItemListComponent,
+    ComingSoonComponent,
+    NotFoundComponent,
+    CreateNftComponent
   ],
   imports: [
     BrowserModule,
