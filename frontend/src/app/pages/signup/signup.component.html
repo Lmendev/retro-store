@@ -1,0 +1,72 @@
+
+<main>
+    <section class="signup-form">
+        <h1>Sign Up</h1>
+        <div class="form-content roller-section">
+            <form action="">
+                <div class="form-container">
+
+                    <div class="form-group">
+                        <label for="">Nombre de Usuario</label>
+                        <div class="roller-input-group">
+                            <input id="inputUsername" type="text" name="inputUsername" class="roller-input-text">                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <div class="roller-input-group">
+                            <input id="inputEmail" type="text" name="inputEmail" class="roller-input-text">                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <div class="roller-input-group">
+                            <input id="inputPassword" type="password" name="inputPassword" class="roller-input-text">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Rol</label>
+                        <div class="roller-input-group">
+                            <div class="roller-input-select">
+                                <select name="role" id="role">
+                                    <option disabled selected>Seleccione su Rol</option>
+                                    <option value="admin">Administrador</option>
+                                    <option value="user">Usuario</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom_check">
+                            <input required type="checkbox" id="post">
+                            <label for="post">Acepto los Términos de Servicio y la Política de Privacidad</label>
+                        </div>                        
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom_check">
+                            <input required type="checkbox" id="suscription">
+                            <label for="suscription">Deseo recibir notifiicaciones de ofertas por correo</label>
+                        </div> 
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input type="button" class="" value="Sign Up" onclick="calculate()">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="login-link">
+                            <p> ¿Ya estás registrado? <a href="/login">Log in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
