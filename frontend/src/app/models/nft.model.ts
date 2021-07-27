@@ -5,6 +5,7 @@ export interface Nft {
     image: string,
     token: string,
     type: string,
+    price: number,
     createdAt: Date,
     updatedAt: Date
 }
