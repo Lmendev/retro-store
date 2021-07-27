@@ -1,6 +1,6 @@
 const User = require("../models/userModel");
-
 const Bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 const userCtrl = {};
 
 userCtrl.listUser = async (req, res, next) => {
@@ -40,7 +40,10 @@ userCtrl.logIn = async (req, res, next) => {
   if (!Bcrypt.compareSync(req.body.password, user.password)) {
     return res.json({ status: "La contraseña es incorrecta" });
   }
-  res.json({ status: "Inicio de sesión con éxito" });
+  const token = jwt.sign({ email: user.email, userID: user._id }, "secret", {
+    expiresIn: "1h",
+  });
+  res.json({ token: token, expiresIn: 3600, userId: user._id });
 };
 
 module.exports = userCtrl;
