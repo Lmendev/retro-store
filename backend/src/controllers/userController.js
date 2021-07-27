@@ -1,6 +1,6 @@
 const User = require("../models/userModel");
-
 const Bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 const userCtrl = {};
 
 userCtrl.listUser = async (req, res, next) => {
@@ -30,6 +30,20 @@ userCtrl.updateUser = async (req, res, next) => {
 userCtrl.deleteUser = async (req, res, next) => {
   await User.findByIdAndRemove(req.params.id);
   res.json({ status: "Usuario borrado." });
+};
+
+userCtrl.logIn = async (req, res, next) => {
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) {
+    return res.json({ status: "Usuario no existe" });
+  }
+  if (!Bcrypt.compareSync(req.body.password, user.password)) {
+    return res.json({ status: "La contraseña es incorrecta" });
+  }
+  const token = jwt.sign({ email: user.email, userID: user._id }, "secret", {
+    expiresIn: "1h",
+  });
+  res.json({ token: token, expiresIn: 3600, userId: user._id });
 };
 
 module.exports = userCtrl;
