@@ -32,4 +32,15 @@ userCtrl.deleteUser = async (req, res, next) => {
   res.json({ status: "Usuario borrado." });
 };
 
+userCtrl.logIn = async (req, res, next) => {
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) {
+    return res.json({ status: "Usuario no existe" });
+  }
+  if (!Bcrypt.compareSync(req.body.password, user.password)) {
+    return res.json({ status: "La contraseña es incorrecta" });
+  }
+  res.json({ status: "Inicio de sesión con éxito" });
+};
+
 module.exports = userCtrl;
