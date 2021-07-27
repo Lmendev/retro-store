@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NftService } from 'src/app/services/nft.service';
 
 import { Nft } from '../../models/nft.model'
 
@@ -8,80 +9,14 @@ import { Nft } from '../../models/nft.model'
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent implements OnInit {
-  nfts: Nft[] = [{
-    _id: '1',
-    title: 'Mario 16Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  }];
+  nfts: Nft[] = [];
 
-  constructor() { }
+  constructor(public NftService: NftService) { 
+    this.NftService.nfts.asObservable().subscribe(nfts => this.nfts = nfts);
+  }
 
   ngOnInit(): void {
+    this.NftService.getNfts();
   }
 
 }

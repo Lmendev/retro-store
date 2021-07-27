@@ -7,7 +7,6 @@
     width: 25rem;
     cursor: pointer;
     margin: .4rem;
-
 }
 
 .main-info-container:hover {
@@ -16,6 +15,7 @@
 
 .nft-description-container{
     padding-left: 1rem;
+    width: inherit;
 }
 
 .nft-image{

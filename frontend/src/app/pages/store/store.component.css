@@ -1,6 +1,11 @@
+h1{
+    text-align: center;
+    margin: 1rem;
+}
 .store-wrapper{
     display: flex;
     justify-content: center;
+    padding: 1rem;
 }
 
 .store-content {
