@@ -1,5 +1,4 @@
 const Nft = require("../models/nftModel");
-
 const nftCtrl = {};
 
 nftCtrl.listNft = async (req, res, next) => {
@@ -8,7 +7,18 @@ nftCtrl.listNft = async (req, res, next) => {
 };
 
 nftCtrl.saveNft = async (req, res, next) => {
-  const nft = new Nft(req.body);
+  const url = req.protocol + "://" + req.get("host");
+
+  const nft = new Nft({
+    title: req.body.title,
+    description: req.body.description,
+    image: url + "/files/" + req.file.filename,
+    token: req.body.token,
+    type: req.body.type,
+    price: req.body.price,
+    onSale: req.body.onSale,
+  });
+
   await nft.save();
   res.json({ status: "NFT creado." });
 };
