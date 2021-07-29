@@ -19,8 +19,8 @@ nftCtrl.saveNft = async (req, res, next) => {
     onSale: req.body.onSale,
   });
 
-  await nft.save();
-  res.json({ status: "NFT creado." });
+  savedNft = await nft.save();
+  res.json(savedNft);
 };
 
 nftCtrl.searchNft = async (req, res, next) => {
