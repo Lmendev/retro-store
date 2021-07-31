@@ -1,5 +1,4 @@
 const Nft = require("../models/nftModel");
-
 const nftCtrl = {};
 
 nftCtrl.listNft = async (req, res, next) => {
@@ -8,9 +7,19 @@ nftCtrl.listNft = async (req, res, next) => {
 };
 
 nftCtrl.saveNft = async (req, res, next) => {
-  const nft = new Nft(req.body);
-  await nft.save();
-  res.json({ status: "NFT creado." });
+  const url = req.protocol + "://" + req.get("host");
+  const nft = new Nft({
+    title: req.body.title,
+    description: req.body.description,
+    image: url + "/files/" + req.file.filename,
+    token: req.body.token,
+    type: req.body.type,
+    price: req.body.price,
+    onSale: req.body.onSale,
+  });
+
+  savedNft = await nft.save();
+  res.json(savedNft);
 };
 
 nftCtrl.searchNft = async (req, res, next) => {
@@ -20,9 +29,27 @@ nftCtrl.searchNft = async (req, res, next) => {
 };
 
 nftCtrl.updateNft = async (req, res, next) => {
-  const { id } = req.params;
-  await Nft.findByIdAndUpdate(id, { $set: req.body }, { new: true });
-  res.json({ status: "NFT actualizado." });
+  let image = "";
+  if (req.file) {
+    const url = req.protocol + "://" + req.get("host");
+    image = url + "/files/" + req.file.filename;
+  } else {
+    image = req.body.image;
+  }
+
+  const nft = new Nft({
+    _id: req.params.id,
+    title: req.body.title,
+    description: req.body.description,
+    image: image,
+    token: req.body.token,
+    type: req.body.type,
+    price: req.body.price,
+    onSale: req.body.onSale,
+  });
+
+  updatedNft = await Nft.updateOne({ _id: req.params.id }, nft);
+  res.json(nft);
 };
 
 nftCtrl.deleteNft = async (req, res, next) => {
