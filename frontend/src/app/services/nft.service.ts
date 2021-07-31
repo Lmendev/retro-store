@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Nft } from '../models/nft.model';
 import { environment } from '../../environments/environment'
@@ -16,82 +16,17 @@ export class NftService {
   
   nfts = new Subject<Nft[]>();
 
-  /*
-  nfts: Nft[] = [{
-    _id: '1',
-    title: 'Mario 16Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  },
-  {
-    _id: '1',
-    title: 'Mario 8Bits',
-    description: 'Mario animado 16Bits edición coleccionable 1985',
-    image: 'mario.jpg',
-    token: 'de2f15d014d40b93578d255e6221fd60',
-    type: 'character',
-    createdAt: new Date(),
-    updatedAt: new Date()
-  }];
-  */
-
   constructor(private http: HttpClient) { }
 
   getNfts(): void{
-    this.http.get<Nft[]>(this.route).subscribe(nfts => this.nfts.next(nfts))
+    this.http.get<Nft[]>(this.route).subscribe(nfts => {console.log(nfts); this.nfts.next(nfts)})
+  }
+
+  getNft(token: string) {
+    return this.http.get<Nft>(this.route + '/' + token);
+  }
+
+  createNft(){
+    
   }
 }

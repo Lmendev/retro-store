@@ -19,7 +19,7 @@ a{
 
 .nft-description-container{
     padding-left: 1rem;
-    width: inherit;
+    width: 100%;
 }
 
 .nft-image{
@@ -31,10 +31,17 @@ a{
     background-color: #1f1f2d;
     border-radius: 4px;
     padding: 0 5px;
+    width: 7rem;
+    height: 6rem;
 }
 
 .nft-image img {
-    max-width: 6rem;
+    max-width: 100%;
+    max-height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: .5rem;
 }
 
 .nft-title {
@@ -44,6 +51,14 @@ a{
     padding-top: 0;
 }
 
+.nft-description-container {
+    overflow: hidden;
+}
+.nft-description-container p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 .nft-description {
     padding: 8px 0;
     border-bottom: 1px solid #6a668a;

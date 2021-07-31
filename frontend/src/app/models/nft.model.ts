@@ -6,6 +6,7 @@ export interface Nft {
     token: string,
     type: string,
     price: number,
+    onSale: boolean,
     createdAt: Date,
     updatedAt: Date
 }

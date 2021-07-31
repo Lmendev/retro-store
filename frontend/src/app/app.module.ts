@@ -13,6 +13,7 @@ import { NftItemListComponent } from './components/store/nft-item-list/nft-item-
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CreateNftComponent } from './pages/nft/create/create.component';
+import { DetailsNftComponent } from './pages/nft/details/details.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CreateNftComponent } from './pages/nft/create/create.component';
     NftItemListComponent,
     ComingSoonComponent,
     NotFoundComponent,
-    CreateNftComponent    
+    CreateNftComponent,
+    DetailsNftComponent    
   ],
   imports: [
     BrowserModule,
