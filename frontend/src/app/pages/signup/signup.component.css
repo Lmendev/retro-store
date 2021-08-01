@@ -114,35 +114,66 @@ input {
     transform: translateY(5px);
 }
 
-
-.roller-input-select select  {
-    background-color: var(--steel-gray);
-    color: var(--white);
-    border-radius: 4px 0 0 4px;
-    border: 2px solid var(--rum);
-    padding: 12px 14px;
-    font-family: var(--font-family-sans-serif);
-    font-size: 1.5rem;
-    width: 490.61px;
-    height: 54px;
+.custom-check {
+    width:30px;
+    height:30px;
+    background-color: #1f1f2c;
+    position:relative;
+}
+.custom-check input {
+    width:30px;
+    height:30px;
+    visibility: hidden;
 }
 
-.custom_checkbox input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    display: none;
+.custom-check label {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: #c3b0d0;
     cursor: pointer;
 }
 
-.custom_checkbox label {
-    position: relative;
-    cursor: pointer;
-    font-size: 20px;
+.custom-check label::before{
+    content:'';
+    width: 9px;
+    height: 5px;
+    border: 3px solid white;
+    position: absolute;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    top: 8px;
+    left: 8px;
+    opacity: 0;
+}
+
+.custom-check input:checked + label::before {
+    opacity: 1;
+}
+
+.custom-check input:checked + label {
+    background-color: #57bba7;
+}
+
+.check {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.check .custom-check {
+    float: left;
+}
+
+.check label {
+    padding-left: 1rem;
+    font-size: 16px;
 }
 
 .login-link {
     text-align: center;
-    margin-top: 2rem ;
+    margin-top: 2rem;
 }
 
