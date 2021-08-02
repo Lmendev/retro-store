@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { IndexComponent } from './pages/index/index.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StoreComponent } from './pages/store/store.component';
 import { NftItemListComponent } from './components/store/nft-item-list/nft-item-list.component';
@@ -15,6 +16,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CreateNftComponent } from './pages/nft/create/create.component';
 import { DetailsNftComponent } from './pages/nft/details/details.component';
 
+import { UsersService } from './services/users.service';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +25,7 @@ import { DetailsNftComponent } from './pages/nft/details/details.component';
     HeaderComponent,
     IndexComponent,
     LoginComponent,
+    SignupComponent,
     FooterComponent,
     StoreComponent,
     NftItemListComponent,
