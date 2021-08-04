@@ -9,21 +9,21 @@
                     <div class="form-group">
                         <label for="">Nombre de Usuario</label>
                         <div class="roller-input-group">
-                            <input id="inputUsername" type="text" name="inputUsername" class="roller-input-text">                            
+                            <input id="inputUsername" type="text" name="inputUsername" #username="ngModel" ([ngModel])="UsersService.selectedUser.userName" class="roller-input-text">                            
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="">Email</label>
                         <div class="roller-input-group">
-                            <input id="inputEmail" type="text" name="inputEmail" class="roller-input-text">                            
+                            <input id="inputEmail" type="text" name="inputEmail" #email="ngModel" ([ngModel])="UsersService.selectedUser.email" class="roller-input-text">                            
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="">Password</label>
                         <div class="roller-input-group">
-                            <input id="inputPassword" type="password" name="inputPassword" class="roller-input-text">
+                            <input id="inputPassword" type="password" name="inputPassword" #password="ngModel" ([ngModel])="UsersService.selectedUser.password" class="roller-input-text">
                         </div>
                     </div>
 

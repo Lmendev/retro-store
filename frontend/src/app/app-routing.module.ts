@@ -4,12 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 // Pages
 import { IndexComponent } from './pages/index/index.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent} from './pages/signup/signup.component';
 import { StoreComponent } from './pages/store/store.component';
 import { CreateNftComponent } from './pages/nft/create/create.component';
 import { DetailsNftComponent } from './pages/nft/details/details.component';
-
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'signup',
+    component: SignupComponent
   },
   {
     path: 'store',
