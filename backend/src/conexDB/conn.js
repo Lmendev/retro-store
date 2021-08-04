@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const urlDB =
-  "mongodb+srv://admin:1M0wqF3ROQ7K19JU@cluster0.3tkog.mongodb.net/retroStore?retryWrites=true&w=majority";
+  "mongodb+srv://admin:CYRdOfdzrJKCjKSB@cluster0.3tkog.mongodb.net/retroStore?retryWrites=true&w=majority";
 mongoose.connect(
   urlDB,
   {
