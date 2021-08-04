@@ -1,4 +1,6 @@
 const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
+const Float = require("mongoose-float").loadType(mongoose);
 
 const nftSchema = Schema(
   {
@@ -20,6 +22,14 @@ const nftSchema = Schema(
     },
     type: {
       type: String,
+      required: true,
+    },
+    price: {
+      type: Float,
+      required: true,
+    },
+    onSale: {
+      type: Boolean,
       required: true,
     },
   },
