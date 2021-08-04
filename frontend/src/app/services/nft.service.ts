@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Nft } from '../models/nft.model';
 import { environment } from '../../environments/environment'
 import { Subject } from 'rxjs';
+import { NftForm } from '../models/nftForm.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,14 +20,27 @@ export class NftService {
   constructor(private http: HttpClient) { }
 
   getNfts(): void{
-    this.http.get<Nft[]>(this.route).subscribe(nfts => {console.log(nfts); this.nfts.next(nfts)})
+    this.http.get<Nft[]>(this.route).subscribe(nfts => this.nfts.next(nfts))
   }
 
   getNft(token: string) {
     return this.http.get<Nft>(this.route + '/' + token);
   }
 
-  createNft(){
-    
+  createNft(nftData: NftForm){
+    console.log('createNft')
+
+    console.log(nftData)
+
+
+    //this.http.post(this.route, nft).subscribe(res => {
+    //  console.log(res)
+        /*console.log(response);
+        
+        post.id = response.idPostAdded;
+        this.posts.push(post);
+        this.postUpdated.next([...this.posts]);
+        this.router.navigate(['/']);*/
+    //  });
   }
 }

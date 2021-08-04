@@ -1,3 +1,11 @@
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 h1{
     text-transform: uppercase;
@@ -144,4 +152,29 @@ input {
 
 .tree-dimensional-button.btn-default input:active {
     transform: translateY(5px);
+}
+
+.roller-input-checkbox{
+    opacity: 0;
+    width: auto;
+    position: absolute;
+}
+
+.form-check{
+    margin-bottom: 1rem;
+}
+
+.form-check-label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form-check-label:before {
+    content: url("/assets/images/form/checkbox_default.svg");
+}
+
+.roller-input-checkbox:checked+.form-check-label:before{
+    content: url("/assets/images/form/checkbox_checked.svg");
 }

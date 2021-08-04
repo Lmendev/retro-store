@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule}   from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,6 @@ import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CreateNftComponent } from './pages/nft/create/create.component';
 import { DetailsNftComponent } from './pages/nft/details/details.component';
-
 
 @NgModule({
   declarations: [
@@ -33,7 +33,9 @@ import { DetailsNftComponent } from './pages/nft/details/details.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
