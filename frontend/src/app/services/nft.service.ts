@@ -28,19 +28,38 @@ export class NftService {
   }
 
   createNft(nftData: NftForm){
-    console.log('createNft')
+    const { title, description, onSale, price, token, type, image } = nftData
+    
+    const nftPostData = new FormData();
+    
+    nftPostData.append('type', type);
+    nftPostData.append('title', title);
+    nftPostData.append('token', token);
+    nftPostData.append('image', image, title);
+    nftPostData.append('description', description);
+    nftPostData.append('price', JSON.stringify(price));
+    nftPostData.append('onSale', JSON.stringify(onSale));
+    
+    //this.http.post<NftForm>(this.route, postData).subscribe(response => {
+     // console.log(response);
+      /*
+      post.id = response.post.id;
+      post.imageUrl = response.post.imageUrl;
+      this.posts.push(post);
+      this.postUpdated.next([...this.posts]);
+      this.router.navigate(['/']);*/
+    //});
 
-    console.log(nftData)
-
-
-    //this.http.post(this.route, nft).subscribe(res => {
-    //  console.log(res)
+    
+    this.http.post(this.route, nftPostData).subscribe(res => {
+        console.log('res')
+        console.log(res)
         /*console.log(response);
         
         post.id = response.idPostAdded;
         this.posts.push(post);
         this.postUpdated.next([...this.posts]);
         this.router.navigate(['/']);*/
-    //  });
+      });
   }
 }
