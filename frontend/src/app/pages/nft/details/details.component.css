@@ -1,0 +1,104 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #6a668a;
+    background-color: #2f3045;
+    padding: 1.5rem 4rem;   
+    margin: .4rem;
+}
+
+article.nft header{
+    display: flex;
+    flex-direction: column;
+}
+
+article.nft header .title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+article.nft header .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+article.nft section.body {
+    display: flex;
+}
+
+article.nft section.body .body-content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section.description{
+    margin-top: 1rem;
+}
+
+article.nft footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container{
+    padding: 3rem;
+}
+
+img {
+    max-width: 20rem;
+}
+
+hr{
+    margin-bottom: 1rem;
+}
+
+span.primary {
+    color: var(--primary);
+}
+
+span.secondary {
+    color: var(--secondary);
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+span.chip {
+    background-color: var(--light-text);
+    color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+span.chip.primary {
+    background-color: var(--primary);
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.8rem;
+}
+
+section.history {
+    background-color: #181928;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}

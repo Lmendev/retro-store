@@ -1,0 +1,10 @@
+main {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,56 @@
+<main>
+    <section class="create-nft-form">
+        <h1>Nuevo Retro NFT</h1>
+
+        <form [formGroup]="form" (submit)="handleNftCreate()" >
+            <div class="form-container roller-section">
+                <div class="form-content">
+                    
+                    <div class="form-group">
+                        <label for="">Título</label>
+                        <div class="roller-input-group">
+                            <input type="text" name="title" class="roller-input-text" placeholder="Personaje retro exclusivo" formControlName="title" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Descripción</label>
+                        <div class="roller-input-group">
+                            <textarea type="text" name="description" formControlName="description" class="roller-input-text" rows="4" placeholder="Un personaje increíble que lideró las batallas más épicas."  required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="imagen" name="imagen" formControlName="imagen" type="file" class="roller-input-text input-file" (change)="imageInputChanged($event)"  required>
+                        <label id="imageLabel" for="imagen">Cargar Imagen</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Categoría</label>
+                        <div class="roller-input-group">
+                            <input type="text" name="type" formControlName="type" class="roller-input-text" placeholder=""  required>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="onSale" name="onSale" formControlName="onSale" class="roller-input-checkbox" >
+                        <label class="form-check-label" for="onSale">A la venta</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Precio</label>
+                        <div class="roller-input-group">
+                            <input type="number" name="price" formControlName="price" class="roller-input-text" value="0" >
+                        </div>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input type="submit" value="Crear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
