@@ -38,6 +38,10 @@ const routes: Routes = [
     component: CreateNftComponent
   },
   {
+    path: 'nft/edit/:_id',
+    component: CreateNftComponent
+  },
+  {
     path: 'nft/:token',
     component: DetailsNftComponent
   },

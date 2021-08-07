@@ -11,7 +11,7 @@ import { NftForm } from '../models/nftForm.model';
 export class NftService {
   apiUrl = environment.apiUrl;
   apiVersion = environment.apiVersion;
-  endPoint = '/nfts';
+  endPoint = '/nfts/';
   
   route = this.apiUrl + this.apiVersion + this.endPoint;
   
@@ -40,26 +40,37 @@ export class NftService {
     nftPostData.append('price', JSON.stringify(price));
     nftPostData.append('onSale', JSON.stringify(onSale));
     
-    //this.http.post<NftForm>(this.route, postData).subscribe(response => {
-     // console.log(response);
-      /*
-      post.id = response.post.id;
-      post.imageUrl = response.post.imageUrl;
-      this.posts.push(post);
-      this.postUpdated.next([...this.posts]);
-      this.router.navigate(['/']);*/
-    //});
-
-    
     this.http.post(this.route, nftPostData).subscribe(res => {
         console.log('res')
         console.log(res)
-        /*console.log(response);
-        
+        /*
         post.id = response.idPostAdded;
         this.posts.push(post);
         this.postUpdated.next([...this.posts]);
         this.router.navigate(['/']);*/
       });
+  }
+
+  updateNft(nftData: NftForm){
+    let nftPutData: any;
+    const { _id, image, title, type, description, price, onSale } = nftData
+
+    nftPutData = { title, type, description, price, onSale };
+
+    if (typeof image === 'object') {
+      nftPutData = new FormData();
+      
+      nftPutData.append('type', type);
+      nftPutData.append('title', title);
+      nftPutData.append('image', image, title);
+      nftPutData.append('description', description);
+      nftPutData.append('price', JSON.stringify(price));
+      nftPutData.append('onSale', JSON.stringify(onSale));
+    } 
+
+    this.http.put(this.route + _id, nftPutData).subscribe(res => {
+      console.log(res)
+      /* this.router.navigate(['/']);*/
+    });
   }
 }
