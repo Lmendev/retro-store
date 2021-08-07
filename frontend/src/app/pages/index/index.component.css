@@ -1,5 +1,5 @@
 main .spotlight {
-    background: url('/assets/images/spotlight.jpg') center;
+    background: center;
     min-height: 38rem;
     text-align: center;
 }
