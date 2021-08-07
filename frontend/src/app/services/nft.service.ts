@@ -12,7 +12,6 @@ export class NftService {
   apiUrl = environment.apiUrl;
   apiVersion = environment.apiVersion;
   endPoint = '/nfts/';
-  
   route = this.apiUrl + this.apiVersion + this.endPoint;
   
   nfts = new Subject<Nft[]>();
