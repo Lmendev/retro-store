@@ -3,9 +3,9 @@
     <h1>Mis NFTs</h1>
     
     <section class="index-store">
-    
         <div class="store-wrapper">
             <div class="store-content">
+                <p *ngIf="message !== ''">{{ message }}</p>
                 <app-nft-item-list *ngFor="let nft of nfts" [nft]="nft"></app-nft-item-list>
             </div>
         </div>

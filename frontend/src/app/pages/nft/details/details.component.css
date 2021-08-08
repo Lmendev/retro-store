@@ -1,7 +1,10 @@
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 1.2rem 0;
+    margin: 1.2rem auto;
+    width: fit-content;
+    align-items: flex-end;
 }
 
 .main-container {

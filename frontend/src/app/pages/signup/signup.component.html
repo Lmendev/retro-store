@@ -27,6 +27,17 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="role">Rol</label>
+                        <div class="roller-input-group input-radio-group">
+                            <input type="radio" id="client" name="role" value="client" [ngModel]="defaultRole">
+                            <label for="client">Cliente</label>
+                            
+                            <input type="radio" id="artist" name="role" value="artist" [ngModel]="defaultRole">
+                            <label for="artist">Artista</label>
+                        </div>
+                    </div>
+
                     <div class="check">
                         <div class="custom-check">
                             <input required type="checkbox" name="service" id="service">

@@ -9,7 +9,8 @@ import { UsersService } from 'src/app/services/users.service';
   providers: [UsersService]
 })
 export class SignupComponent implements OnInit {
-  
+  defaultRole:string = "client"
+
   constructor(private UsersService: UsersService ) { }
 
   ngOnInit(): void {
@@ -18,8 +19,6 @@ export class SignupComponent implements OnInit {
   onSignup(form: NgForm): void{
     if (form.invalid) 
       return;
-    
-    form.value.role = 'cliente'
 
     this.UsersService.createUser(form.value);
   }

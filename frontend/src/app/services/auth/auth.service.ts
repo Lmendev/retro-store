@@ -30,7 +30,7 @@ export class AuthService {
         
         if (response.token) {
           this.isAuthenticated = true;
-          
+          console.log(response)
           const {token, userId, role} = response
           this.token = token;
           this.user_id = userId;

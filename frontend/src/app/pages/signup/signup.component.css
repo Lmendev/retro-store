@@ -49,6 +49,8 @@ input {
 
 .roller-input-group {
     display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .roller-input-text {
@@ -177,3 +179,11 @@ input {
     margin-top: 2rem;
 }
 
+.roller-input-group.input-radio-group *{
+    width: auto;
+    margin: 0;
+}
+
+.roller-input-group.input-radio-group *:hover{
+    cursor:pointer;
+}

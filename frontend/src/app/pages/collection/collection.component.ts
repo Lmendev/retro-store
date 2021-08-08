@@ -10,12 +10,19 @@ import { NftService } from 'src/app/services/nft.service';
 })
 export class CollectionComponent implements OnInit {
   nfts: Nft[] = [];
-  
+  message = '';
+
   constructor(public nftService: NftService, public authService: AuthService) { }
 
   ngOnInit(): void {
     const owner = this.authService.getUserId();
-    this.nftService.getNftsByOwner(owner).subscribe(nfts => this.nfts = nfts);
+    this.nftService.getNftsByOwner(owner).subscribe(nfts => {
+      if(nfts.length === 0){
+        this.message = 'Aun no tienes NFTs!'
+      }
+
+      this.nfts = nfts
+    });
   }
 
 }

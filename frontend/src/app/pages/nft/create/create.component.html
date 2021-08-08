@@ -6,26 +6,26 @@
             <div class="form-container roller-section">
                 <div class="form-content">
                     
-                    <div class="form-group">
+                    <div class="form-group" *ngIf="role === 'artist'">
                         <label for="">Título</label>
                         <div class="roller-input-group">
                             <input type="text" name="title" class="roller-input-text" placeholder="Personaje retro exclusivo" formControlName="title" required>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" *ngIf="role === 'artist'">
                         <label for="">Descripción</label>
                         <div class="roller-input-group">
                             <textarea type="text" name="description" formControlName="description" class="roller-input-text" rows="4" placeholder="Un personaje increíble que lideró las batallas más épicas."  required></textarea>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" *ngIf="role === 'artist'">
                         <input id="imagen" name="imagen" type="file" class="roller-input-text input-file" (change)="imageInputChanged($event)"  required>
                         <label id="imageLabel" for="imagen">{{ pageLabelForImageInput }}</label>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" *ngIf="role === 'artist'">
                         <label for="">Categoría</label>
                         <div class="roller-input-group">
                             <input type="text" name="type" formControlName="type" class="roller-input-text" placeholder=""  required>

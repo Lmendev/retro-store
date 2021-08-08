@@ -22,6 +22,8 @@ export class CreateNftComponent implements OnInit {
   public pageButtonValue:string = "Crear NFT";
   public pageLabelForImageInput:string = "Cargar Imagen";
   
+  role:string = '';
+
   constructor(
     public NftService: NftService, 
     public authService: AuthService, 
@@ -55,6 +57,8 @@ export class CreateNftComponent implements OnInit {
         });
       }
     });
+
+    this.role = this.authService.getRole();
   }
 
   imageInputChanged(e: Event): void {
