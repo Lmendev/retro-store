@@ -26,4 +26,8 @@ export class UsersService {
       }
     });
   }
+
+  getUserById(_id: string){
+    return this.http.get<User>(this.route + _id);
+  }
 }

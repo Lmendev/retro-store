@@ -18,6 +18,7 @@ import { CreateNftComponent } from './pages/nft/create/create.component';
 import { DetailsNftComponent } from './pages/nft/details/details.component';
 
 import { UsersService } from './services/users.service';
+import { CollectionComponent } from './pages/collection/collection.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { UsersService } from './services/users.service';
     ComingSoonComponent,
     NotFoundComponent,
     CreateNftComponent,
-    DetailsNftComponent    
+    DetailsNftComponent,
+    CollectionComponent    
   ],
   imports: [
     BrowserModule,

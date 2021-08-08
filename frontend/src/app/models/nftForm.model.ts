@@ -6,5 +6,6 @@ export interface NftForm {
     token: string,
     type: string,
     price: number,
+    owner: string,
     onSale: boolean
 }

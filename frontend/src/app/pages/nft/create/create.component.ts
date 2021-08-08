@@ -6,6 +6,7 @@ import { NftForm } from 'src/app/models/nftForm.model';
 import { NftService } from 'src/app/services/nft.service';
 import { Md5 } from 'ts-md5/dist/md5';
 import { HttpClient } from '@angular/common/http';
+import { AuthService } from 'src/app/services/auth/auth.service';
 
 @Component({
   selector: 'app-create',
@@ -21,7 +22,11 @@ export class CreateNftComponent implements OnInit {
   public pageButtonValue:string = "Crear NFT";
   public pageLabelForImageInput:string = "Cargar Imagen";
   
-  constructor(public NftService: NftService, public route: ActivatedRoute, private http: HttpClient) { }
+  constructor(
+    public NftService: NftService, 
+    public authService: AuthService, 
+    public route: ActivatedRoute, 
+    private http: HttpClient) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -68,6 +73,7 @@ export class CreateNftComponent implements OnInit {
       return;
     
     const { title, description, type, onSale, price, image} = this.form.value
+    const owner = this.authService.getUserId();
 
     const nftData: NftForm = {
       _id: this.nft_id,
@@ -76,10 +82,11 @@ export class CreateNftComponent implements OnInit {
       type,
       price,
       image,
+      owner,
       onSale: onSale? true: false,
       token: Md5.hashStr(title + new Date().toString())
     }
-
+    console.log(nftData) 
     if (this.isEditing){
       this.NftService.updateNft(nftData);
     }else{

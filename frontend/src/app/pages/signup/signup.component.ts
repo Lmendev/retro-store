@@ -19,6 +19,8 @@ export class SignupComponent implements OnInit {
     if (form.invalid) 
       return;
     
+    form.value.role = 'cliente'
+
     this.UsersService.createUser(form.value);
   }
 }

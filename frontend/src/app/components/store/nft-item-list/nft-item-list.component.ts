@@ -15,6 +15,7 @@ export class NftItemListComponent implements OnInit {
     image: '',
     token: '',
     type: '',
+    owner: '',
     price: 0,
     onSale: false,
     createdAt: new Date(),

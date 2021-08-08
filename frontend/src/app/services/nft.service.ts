@@ -22,21 +22,33 @@ export class NftService {
     this.http.get<Nft[]>(this.route).subscribe(nfts => this.nfts.next(nfts))
   }
 
+  getOnSaleNfts(){
+    let params = { params: new HttpParams().set("onSale", "true") }
+    return this.http.get<Nft[]>(this.route, params)
+  }
+
+  getNftsByOwner(_id: string){
+    let params = { params: new HttpParams().set("owner", _id) }
+
+    return this.http.get<Nft[]>(this.route, params)
+  }
+
   getNft(token: string) {
     return this.http.get<Nft>(this.route + '/' + token);
   }
 
   createNft(nftData: NftForm){
-    const { title, description, onSale, price, token, type, image } = nftData
+    const { title, description, onSale, price, token, type, image, owner} = nftData
     
     const nftPostData = new FormData();
-    
+    console.log(owner)
     nftPostData.append('type', type);
     nftPostData.append('title', title);
     nftPostData.append('token', token);
     nftPostData.append('image', image, title);
     nftPostData.append('description', description);
     nftPostData.append('price', JSON.stringify(price));
+    nftPostData.append('owner', owner);
     nftPostData.append('onSale', JSON.stringify(onSale));
     
     this.http.post(this.route, nftPostData).subscribe(res => {
