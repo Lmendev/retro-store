@@ -4,7 +4,7 @@ const nftCtrl = {};
 
 nftCtrl.listNft = async (req, res, next) => {
   try {
-    const nfts = await Nft.find();
+    const nfts = await Nft.find(req.query);
     res.json(nfts);
   } catch (err) {
     res.status(500).send(err);
