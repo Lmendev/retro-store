@@ -32,6 +32,10 @@ const nftSchema = Schema(
       type: Boolean,
       required: true,
     },
+    owner: {
+      type: String,
+      required: true,
+    }
   },
   { timestamps: true, versionKey: false }
 );
