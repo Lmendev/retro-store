@@ -4,25 +4,25 @@
         <h1>Log in</h1>
         <div class="form-content roller-section">
 
-            <form action="">
+            <form (submit)="onLogin(loginForm)" #loginForm="ngForm">
                 <div class="form-container">
                     <div class="form-group">
                         <label for="">Email</label>
                         <div class="roller-input-group">
-                            <input id="inputEmail" type="text" name="inputEmail" class="roller-input-text">
+                            <input id="email" type="email" name="email" class="roller-input-text" ngModel>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="">Password</label>
                         <div class="roller-input-group">
-                            <input id="inputPassword" type="password" name="inputPassword" class="roller-input-text">
+                            <input id="password" type="password" name="password" class="roller-input-text" ngModel>
                         </div>
                     </div>
 
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input type="button" class="" value="Log in" onclick="calculate()">
+                            <input type="submit" class="" value="Log in">
                         </div>
                     </div>
                 </div>

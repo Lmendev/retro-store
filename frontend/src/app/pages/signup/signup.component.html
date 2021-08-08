@@ -3,27 +3,27 @@
     <section class="signup-form">
         <h1>Sign Up</h1>
         <div class="form-content roller-section">
-            <form action="">
+            <form (submit)="onSignup(userForm)" #userForm="ngForm">
                 <div class="form-container">
 
                     <div class="form-group">
                         <label for="">Nombre de Usuario</label>
                         <div class="roller-input-group">
-                            <input id="inputUsername" type="text" name="inputUsername" class="roller-input-text">                            
+                            <input id="inputUsername" type="text" name="userName" class="roller-input-text" ngModel>                            
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="">Email</label>
                         <div class="roller-input-group">
-                            <input id="inputEmail" type="text" name="inputEmail" class="roller-input-text">                            
+                            <input id="inputEmail" type="text" name="email" class="roller-input-text" ngModel>                            
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="">Password</label>
                         <div class="roller-input-group">
-                            <input id="inputPassword" type="password" name="inputPassword" class="roller-input-text">
+                            <input id="inputPassword" type="password" name="password" class="roller-input-text" ngModel>
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@
 
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input type="button" class="" value="Sign Up" onclick="calculate()">
+                            <input type="submit" class="" value="Sign Up">
                         </div>
                     </div>
 
