@@ -12,11 +12,10 @@ export class StoreComponent implements OnInit {
   nfts: Nft[] = [];
 
   constructor(public NftService: NftService) { 
-    this.NftService.nfts.asObservable().subscribe(nfts => this.nfts = nfts);
   }
 
   ngOnInit(): void {
-    this.NftService.getNfts();
+    this.NftService.getOnSaleNfts().subscribe(nfts => this.nfts = nfts);
   }
 
 }

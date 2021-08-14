@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
+import Swal from 'sweetalert2'
 @Injectable({
   providedIn: 'root'
 })
@@ -29,26 +30,29 @@ export class AuthService {
         console.log(response)
         
         if (response.token) {
-          this.token = response.token;
           this.isAuthenticated = true;
+          console.log(response)
+          const {token, userId, role} = response
+          this.token = token;
+          this.user_id = userId;
+          this.role = role;
 
           this.authStatusListener.next(true);
 
-          /*const expirationInDuration = response.expiresIn;
-          //this.setAuthTimer(expirationInDuration);
+          this.saveAuthData(this.token, this.user_id, this.role);
 
-          
-          this.user_id = response.userId;
-          this.authStatusListener.next(true);
-          const now = new Date();
-          const expirationDate = new Date(
-            now.getTime() + expirationInDuration * 1000
-          );
-          console.log(expirationDate);
-          */
-         this.saveAuthData(this.token);
-         this.router.navigate(['./store/']);
+          this.router.navigate(['./store/']);
+          return
         }
+
+        Swal.fire({
+          text: response.status,
+          toast: true,
+          icon: 'error',
+          position: 'top',
+          showConfirmButton: false,
+          timer: 2500,
+        })
       });
   }
 
@@ -64,39 +68,37 @@ export class AuthService {
 
   private getAuthData() {
     const token = localStorage.getItem('token');
-    /*const expirationDate = new Date(localStorage.getItem('expiration')!);
-    const userId = localStorage.getItem('userId');*/
+    const user_id = localStorage.getItem('user_id');
+    const role = localStorage.getItem('role');
     
-    if (!token /*|| !expirationDate*/) return;
+    if (!token || !user_id || !role) return;
     
-    return { token /*, expirationDate, userId */ };
+    return { token , user_id, role };
   }
 
-  private saveAuthData(token: string) {
+  private saveAuthData(token: string, user_id: string, role: string) {
     localStorage.setItem('token', token);
-    /*localStorage.setItem('expiration', expirationDate.toISOString());
-    localStorage.setItem('userId', userId);*/
+    localStorage.setItem('user_id', user_id);
+    localStorage.setItem('role', role);
   }
 
   private clearAuthData() {
     localStorage.removeItem('token');
-    /*localStorage.removeItem('expiration');
-    localStorage.removeItem('userId');*/
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('role');
   }
 
   autoAuthUser(): void{
     const authInfo = this.getAuthData();
     
     if (!authInfo) return;
-    
-    const now = new Date();
-    
-    /*const expiresIn = authInfo.expirationDate.getTime() - now.getTime();
-    if (expiresIn > 0) {*/
-      this.token = localStorage.getItem('token')!;
-      this.isAuthenticated = true;
-      this.authStatusListener.next(true);
-    //}
+
+    this.isAuthenticated = true;
+    this.token = localStorage.getItem('token')!;
+    this.user_id = localStorage.getItem('user_id')!;
+    this.role = localStorage.getItem('role')!;
+
+    this.authStatusListener.next(true);
   }
 
   // Getters and setters

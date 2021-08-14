@@ -1,7 +1,21 @@
 <main>
-    <div>
-        <a href="./nft/edit/{{ nft._id }}">Editar</a>
+    <div *ngIf="nftIsMine">
+        <a routerLink="/nft/edit/{{ nft._id }}">
+            <div class="tree-dimensional-button btn-default">
+                Editar
+            </div>
+        </a>
     </div>
+
+    <div *ngIf="!nftIsMine && nft.onSale">
+        <a (click)="comprar()">
+            <div class="tree-dimensional-button btn-default">
+                Comprar
+            </div>
+        </a>
+    </div>
+
+
     <div class="main-container">
         <article class="nft">
             <header>
@@ -30,7 +44,9 @@
                 <div class="body-content">
                     <div>
                         Atributos <br/>
-                        <span class="chip">{{ nft.type }}</span>
+                        <span class="chip" *ngFor="let attr of this.attrs">
+                            {{ attr }}
+                        </span>
                     </div>
 
                     <section class="description">
@@ -40,7 +56,7 @@
                     <hr>
 
                     <div>
-                        Este artículo retro es actualmente propiedad de <span class="primary">lmendev</span>
+                        Este artículo retro es actualmente propiedad de <span class="primary">{{ ownerUsername }}</span>
                     </div>
                     
                     
@@ -53,8 +69,8 @@
 
             <footer>
                 <div>
-                    Creado el 
-                    {{ nft.createdAt }}
+                    Created on 
+                    {{ nft.createdAt | date:'medium' }}
                 </div>
 
                 <div class="price">

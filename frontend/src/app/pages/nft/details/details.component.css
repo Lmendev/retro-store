@@ -1,7 +1,10 @@
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 1.2rem 0;
+    margin: 1.2rem auto;
+    width: fit-content;
+    align-items: flex-end;
 }
 
 .main-container {
@@ -101,4 +104,40 @@ section.history {
     padding: 8px 16px;
     font-size: 1.5rem;
     margin: 1rem 0;
+}
+
+.tree-dimensional-button {
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+.tree-dimensional-button.btn-default {
+    box-shadow: 0 6px #514e72, 0 10px #1f1f2c;
+}
+
+.tree-dimensional-button.btn-default {
+    -webkit-appearance: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .5rem 0;
+    background-color: #8984b1;
+    border: 1px solid #c3b0d0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: var(--font-family-sans-serif);
+    color: var(--white);
+    font-size: 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .5rem 2rem;
+}
+
+.tree-dimensional-button:active {
+    opacity: .7;
+}
+
+.tree-dimensional-button.btn-default:active {
+    transform: translateY(5px);
+    box-shadow: 0 1px #514e72, 0 5px #1f1f2c;
 }

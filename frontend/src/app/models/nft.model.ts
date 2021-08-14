@@ -7,6 +7,7 @@ export interface Nft {
     type: string,
     price: number,
     onSale: boolean,
+    owner: string,
     createdAt: Date,
     updatedAt: Date
 }

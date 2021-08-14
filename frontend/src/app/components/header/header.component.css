@@ -46,7 +46,7 @@ nav ul li:hover{
 }
 
 nav ul li:not(:first-child) {
-    padding-left: .5rem;
-    margin-left: .5rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
     border-left: 1px solid var(--white);
 }

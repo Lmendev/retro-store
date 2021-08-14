@@ -16,12 +16,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.isAuth = this.authService.getIsAuthenticated();
+    this.role = this.authService.getRole();
 
     this.authListenerSub = this.authService
       .getAuthStatusListener()
       .subscribe(isAuthenticated => {
         this.isAuth = isAuthenticated;
-        //this.role = this.authService.getRole();
+        this.role = this.authService.getRole();
       });
   }
 

@@ -10,6 +10,7 @@ import { CreateNftComponent } from './pages/nft/create/create.component';
 import { DetailsNftComponent } from './pages/nft/details/details.component';
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { CollectionComponent } from './pages/collection/collection.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'store',
     component: StoreComponent
+  },
+  {
+    path: 'collection',
+    component: CollectionComponent
   },
   {
     path: 'coming-soon',
