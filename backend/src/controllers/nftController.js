@@ -4,7 +4,7 @@ const nftCtrl = {};
 
 nftCtrl.listNft = async (req, res, next) => {
   try {
-    const nfts = await Nft.find();
+    const nfts = await Nft.find(req.query);
     res.json(nfts);
   } catch (err) {
     res.status(500).send(err);
@@ -13,15 +13,18 @@ nftCtrl.listNft = async (req, res, next) => {
 
 nftCtrl.saveNft = async (req, res, next) => {
   try {
-    const url = req.protocol + "://" + req.get("host");
+    const {title, description, token, type, price, onSale, owner} = req.body
+    const image = req.protocol + "://" + req.get("host") + "/files/" + req.file.filename
+
     const nft = new Nft({
-      title: req.body.title,
-      description: req.body.description,
-      image: url + "/files/" + req.file.filename,
-      token: req.body.token,
-      type: req.body.type,
-      price: req.body.price,
-      onSale: req.body.onSale,
+      title,
+      description,
+      image,
+      token,
+      type,
+      price,
+      onSale,
+      owner
     });
 
     savedNft = await nft.save();
@@ -60,6 +63,7 @@ nftCtrl.updateNft = async (req, res, next) => {
       type: req.body.type,
       price: req.body.price,
       onSale: req.body.onSale,
+      owner: req.body.owner,
     });
 
     updatedNft = await Nft.updateOne({ _id: req.params.id }, nft);

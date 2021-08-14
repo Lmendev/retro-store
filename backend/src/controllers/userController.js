@@ -64,7 +64,7 @@ userCtrl.logIn = async (req, res, next) => {
     const token = jwt.sign({ email: user.email, userID: user._id }, "secret", {
       expiresIn: "1h",
     });
-    res.json({ token: token, expiresIn: 3600, userId: user._id });
+    res.json({ token, expiresIn: 3600, userId: user._id, role: user.role });
   } catch (err) {
     res.status(500).send(err);
   }
