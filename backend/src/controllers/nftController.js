@@ -30,7 +30,6 @@ nftCtrl.saveNft = async (req, res, next) => {
     savedNft = await nft.save();
     res.json(savedNft);
   } catch (err) {
-    console.log(err)
     res.status(500).send(err);
   }
 };

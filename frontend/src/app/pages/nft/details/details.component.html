@@ -1,0 +1,73 @@
+<main>
+    <div>
+        <a href="./nft/edit/{{ nft._id }}">Editar</a>
+    </div>
+    <div class="main-container">
+        <article class="nft">
+            <header>
+                <div class="title">
+                    {{ nft.title }}
+                </div>
+                
+                <div class="subtitle">
+                    <div>
+                        Token: 
+                        <span class="primary">
+                            {{ nft.token }}
+                        </span>
+                    </div>
+
+                    <div *ngIf="nft.onSale; else elseBlock">
+                        <span class="chip primary">🏷️ A la venta</span>
+                    </div>
+                    <ng-template #elseBlock> 
+                        <span class="chip unavailable">👾 No disponible para venta</span>
+                    </ng-template>
+                </div>
+            </header>
+
+            <section class="body">
+                <div class="body-content">
+                    <div>
+                        Atributos <br/>
+                        <span class="chip">{{ nft.type }}</span>
+                    </div>
+
+                    <section class="description">
+                        {{ nft.description }}
+                    </section>
+                    
+                    <hr>
+
+                    <div>
+                        Este artículo retro es actualmente propiedad de <span class="primary">lmendev</span>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="image-container">
+                    <img src="{{ nft.image }}" alt="">
+                </div>
+            </section>
+
+            <footer>
+                <div>
+                    Creado el 
+                    {{ nft.createdAt }}
+                </div>
+
+                <div class="price">
+                    Precio: 
+                    <span class="secondary bold">
+                        ${{ nft.price }}
+                    </span>
+                </div>
+            </footer>
+        </article>
+
+        <section class="history">
+            Historial de transacciones (Próximamente)
+        </section>
+    </div>
+</main>

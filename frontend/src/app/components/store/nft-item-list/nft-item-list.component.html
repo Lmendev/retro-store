@@ -1,0 +1,18 @@
+<a href="/nft/{{ nft._id }}">
+    <div class="main-info-container">
+        <div class="nft-image-container">
+            <div class="nft-image">
+                <img src="{{ nft.image }}" alt="{{ nft.title }} Image">
+            </div>
+        </div>
+        
+        <div class="nft-description-container">
+            <p class="nft-title">{{ nft.title }}</p>
+            <p class="nft-description">{{ nft.description }}</p>
+            <p class="nft-price">
+                <span class="nft-price-title">Precio</span>
+                <span class="nft-price-value">${{ nft.price }}</span>
+            </p>
+        </div>
+    </div>
+</a>

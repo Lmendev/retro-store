@@ -1,0 +1,69 @@
+
+<main>
+    <section class="signup-form">
+        <h1>Sign Up</h1>
+        <div class="form-content roller-section">
+            <form (submit)="onSignup(userForm)" #userForm="ngForm">
+                <div class="form-container">
+
+                    <div class="form-group">
+                        <label for="">Nombre de Usuario</label>
+                        <div class="roller-input-group">
+                            <input id="inputUsername" type="text" name="userName" class="roller-input-text" ngModel>                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <div class="roller-input-group">
+                            <input id="inputEmail" type="text" name="email" class="roller-input-text" ngModel>                            
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <div class="roller-input-group">
+                            <input id="inputPassword" type="password" name="password" class="roller-input-text" ngModel>
+                        </div>
+                    </div>
+
+                    <div class="check">
+                        <div class="custom-check">
+                            <input required type="checkbox" name="service" id="service">
+                            <label for="service"></label>
+                        </div>
+                        <label for="">Acepto los Términos de Servicio.</label>
+                    </div>
+
+                    <div class="check">
+                        <div class="custom-check">
+                            <input required type="checkbox" name="privacy" id="privacy">
+                            <label for="privacy"></label>
+                        </div>
+                        <label for="">Acepto la Política de Privacidad.</label>
+                    </div>
+
+                    <div class="check">
+                        <div class="custom-check">
+                            <input required type="checkbox" name="suscription" id="suscription">
+                            <label for="suscription"></label>
+                        </div>
+                        <label for="">Acepto recibir ofertas por correo.</label>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input type="submit" class="" value="Sign Up">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="login-link">
+                            <p> ¿Ya estás registrado? <a href="/login">Log in</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

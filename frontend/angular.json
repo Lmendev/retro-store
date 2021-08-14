@@ -98,6 +98,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "base-href": "/retro-store/"
+          }
         }
       }
     }
