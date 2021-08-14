@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
+import Swal from 'sweetalert2'
 @Injectable({
   providedIn: 'root'
 })
@@ -41,7 +42,17 @@ export class AuthService {
           this.saveAuthData(this.token, this.user_id, this.role);
 
           this.router.navigate(['./store/']);
+          return
         }
+
+        Swal.fire({
+          text: response.status,
+          toast: true,
+          icon: 'error',
+          position: 'top',
+          showConfirmButton: false,
+          timer: 2500,
+        })
       });
   }
 

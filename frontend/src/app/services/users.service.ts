@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Subject } from 'rxjs';
 import { User } from '../models/user.model';
-
+import Swal from 'sweetalert2'
 
 @Injectable({
   providedIn: 'root'
@@ -20,9 +20,23 @@ export class UsersService {
     console.log(user)
     this.http.post(this.route, user).subscribe((res: any) => {
       if(res.status === "Usuario creado." ){
-        console.log("Usuario creado.")
+        Swal.fire({
+          text: "Usuario creado",
+          toast: true,
+          icon: 'success',
+          position: 'top',
+          showConfirmButton: false,
+          timer: 2500,
+        })
       }else {
-        console.log("No se ha podido crear el usuario.")
+        Swal.fire({
+          text: res.status,
+          toast: true,
+          icon: 'error',
+          position: 'top',
+          showConfirmButton: false,
+          timer: 2500,
+        })
       }
     });
   }

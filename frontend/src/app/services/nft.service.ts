@@ -1,9 +1,13 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Nft } from '../models/nft.model';
 import { environment } from '../../environments/environment'
 import { Subject } from 'rxjs';
 import { NftForm } from '../models/nftForm.model';
+import { Router } from '@angular/router';
+
+import Swal from 'sweetalert2'
+import { AuthService } from './auth/auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +20,7 @@ export class NftService {
   
   nfts = new Subject<Nft[]>();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router, public authService: AuthService) { }
 
   getNfts(): void{
     this.http.get<Nft[]>(this.route).subscribe(nfts => this.nfts.next(nfts))
@@ -51,14 +55,22 @@ export class NftService {
     nftPostData.append('owner', owner);
     nftPostData.append('onSale', JSON.stringify(onSale));
     
-    this.http.post(this.route, nftPostData).subscribe(res => {
+    this.http.post(this.route, nftPostData, { headers: new HttpHeaders({Authorization: 'Bearer ' + this.authService.getToken() })}).subscribe(res => {
         console.log('res')
         console.log(res)
+
+        Swal.fire({
+          text: 'NFT creado',
+          toast: true,
+          icon: 'info',
+        }).then(() =>{
+          this.router.navigate(['/collection'])
+        })
         /*
         post.id = response.idPostAdded;
         this.posts.push(post);
         this.postUpdated.next([...this.posts]);
-        this.router.navigate(['/']);*/
+        this.router.navigate(['/collection']);*/
       });
   }
 
@@ -79,9 +91,24 @@ export class NftService {
       nftPutData.append('onSale', JSON.stringify(onSale));
     } 
 
-    this.http.put(this.route + _id, nftPutData).subscribe(res => {
+    this.http.put(this.route + _id, nftPutData, { headers: new HttpHeaders({Authorization: 'Bearer ' + this.authService.getToken() })}).subscribe(res => {
       console.log(res)
       /* this.router.navigate(['/']);*/
+      Swal.fire({
+        text: 'Información actualizada',
+        toast: true,
+        icon: 'info',
+        position: 'center',
+        showConfirmButton: false,
+        timer: 2500,
+      })
+    });
+  }
+
+  updateOwnerNft(_id: string, owner: string): void{
+    console.log("owner: "+owner)
+    this.http.put(this.route + _id, { owner, onSale: false }, { headers: new HttpHeaders({Authorization: 'Bearer ' + this.authService.getToken() })}).subscribe(res => {
+      this.router.navigate(['/collection'])
     });
   }
 }
