@@ -64,6 +64,7 @@ nftCtrl.updateNft = async (req, res, next) => {
       type: req.body.type,
       price: req.body.price,
       onSale: req.body.onSale,
+      owner: req.body.owner,
     });
 
     updatedNft = await Nft.updateOne({ _id: req.params.id }, nft);
