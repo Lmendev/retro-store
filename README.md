@@ -9,6 +9,8 @@ Online NFT Store Simulator | Misión TIC 2022
 ![forks shield](https://img.shields.io/github/forks/Lmendev/retro-store)
 ![starts shield](https://img.shields.io/github/stars/Lmendev/retro-store)
 ![licence shield](https://img.shields.io/github/license/Lmendev/retro-store)
+![licence shield](https://img.shields.io/github/v/release/Lmendev/retro-store)
+  
 
 ![website screenshot](.assets/mockups/store.png)
 </div>
