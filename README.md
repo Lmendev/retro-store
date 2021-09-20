@@ -19,7 +19,7 @@ Online NFT Store Simulator | Misión TIC 2022
 
 El presente proyecto sobre un sistema de gestión de servicios para el sector cripto simulando tokens no fungibles (NFT) sobre blockchain, formó parte de los estudios de la asignatura de **DESARROLLO DE APLICACIONES WEB: 2021-2-1711-W1-Presencial** del programa **Misión TIC 2022**. 
 
-El enfoque del programa se interesaba en que los tripulantes construyan progresivamente una **aplicación web en la nube totalmente funcional**. A partir del desarrollo de diversos saberes como la metodología Scrum, uso de frameworks, implementación de SPA (Single-page application) y desarrollo de componentes en distintos lenguajes de programación.
+El enfoque del programa se interesaba en que los tripulantes construyeran progresivamente una **aplicación web en la nube totalmente funcional**. A partir del desarrollo de diversos saberes como la metodología Scrum, uso de frameworks, implementación de SPA (Single-page application) y desarrollo de componentes en distintos lenguajes de programación.
 
 ## ✋ Necesidad a satisfacer
 
