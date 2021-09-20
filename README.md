@@ -17,9 +17,9 @@ Online NFT Store Simulator | Misión TIC 2022
 
 ## 💬 Introducción
 
-El presente proyecto sobre la creación de un sistema de gestión de servicios para el sector cripto simulando tokens no fungibles (NFT) sobre blockchain, forma parte de los estudios de la asignatura de **DESARROLLO DE APLICACIONES WEB: 2021-2-1711-W1-Presencial** del programa **Misión TIC 2022**. 
+El presente proyecto sobre un sistema de gestión de servicios para el sector cripto simulando tokens no fungibles (NFT) sobre blockchain, formó parte de los estudios de la asignatura de **DESARROLLO DE APLICACIONES WEB: 2021-2-1711-W1-Presencial** del programa **Misión TIC 2022**. 
 
-El enfoque del programa se interesa por que los tripulantes construyan progresivamente una **aplicación web en la nube totalmente funcional**. A partir del desarrollo de diversos saberes como la metodología Scrum, uso de frameworks, implementación de SPA (Single-page application) y desarrollo de componentes en distintos lenguajes de programación.
+El enfoque del programa se interesaba en que los tripulantes construyan progresivamente una **aplicación web en la nube totalmente funcional**. A partir del desarrollo de diversos saberes como la metodología Scrum, uso de frameworks, implementación de SPA (Single-page application) y desarrollo de componentes en distintos lenguajes de programación.
 
 ## ✋ Necesidad a satisfacer
 
@@ -48,7 +48,7 @@ Desarrollar una aplicación web funcional con lo aprendido en el programa **Misi
 Es importante tener en cuenta, que dicha aplicación se centrará en el proceso de administración y compra de dichos tokens, es decir, el desarrollo de la tecnología que permite crear los NFT no estará por el momento dentro del alcance del proyecto.
 
 ## 👨‍💻👩‍💻 Roles
-A continuación, se presentar los roles y las funciones que cumplirá cada estudiante implicado en el desarrollo del proyecto.
+A continuación, se presentan los roles y las funciones de cada estudiante implicado en el proyecto.
 
 | 🚀 Tripulante                       | Scrum Team Role         | Responsabilidades    |
 |-------------------------------|-------------------------|--------------------|
@@ -69,8 +69,7 @@ Teniendo en cuenta las limitaciones de tiempo para realizar los siguientes desar
 
 Hemos compilado y organizado todas las historias de usuario necesarias para satisfacer las necesidades de nuestro cliente.
 
-Sigue el **estado actual de nuestro Product Backlog** en 👉
-[<img src=".assets/images/tools/clickUp.svg" width="85rem" style="position: absolute; margin-left: .5rem; background-color: #fff;border:3px solid #fff;"/>](https://sharing.clickup.com/l/h/6-17754975-1/0b4db6b6fd9a9b4)
+Actualmente no se encuentran tareas pendientes en el **Product Backlog** 💆‍♂️
 
 ## 📈 Diagramas 
 
@@ -90,8 +89,8 @@ Login View
 Store Main View
 ![Store Main View Image](.assets/mockups/store.png)
 
-## 👍 ¿Te gusta el proyecto?
-¡Déjanos una estrella ⭐ para saberlo y continuar motivados! 😃
+## 👍 ¿Te ha gustado el proyecto?
+¡Déjanos una estrella ⭐ para saberlo! 🙂
 
 ## ⚖️ Licencia
 Interfaz gráfica de usuario inspiradas en el diseño de [rollercoin.com](http://rollercoin.com/) con motivos académicos. Las imágenes y los diseños son material protegido por derechos de autor.
