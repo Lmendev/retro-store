@@ -1,3 +1,5 @@
+> 🗄️ **Archivado.** Simulador de tienda en línea de NFT con temática retro, desarrollado como proyecto del programa Misión TIC 2022 con Angular y metodología Scrum.
+
 <div align="center">
 <h1>Retro Store</h1>
 
